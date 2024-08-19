@@ -48,3 +48,20 @@ Cosa devo controllare esattamente?
 
 // Invento una lista di mail
 const emails = ['daniele@gmail.com', 'giorgio@gmail.com', 'andrea@gmail.com', 'giovanni@gmail.com', 'luca@gmail.com']
+console.log(emails)
+
+// Recupero l'input dal DOM
+const insertEmail = document.getElementById('email')
+
+// Controllo che l'email sia inserita nella lista
+let message = ''
+
+for(let i = 0; i < emails.length; i++){
+    if(emails[i] === insertEmail){
+        message = 'Benvenuto'
+    }   else{
+        message = 'Email non valida'
+    }
+}
+
+console.log(message)
